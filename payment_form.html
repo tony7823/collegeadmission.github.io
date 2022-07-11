@@ -1,0 +1,70 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body >
+
+
+<div class="container">
+  <form action="">
+        <h2 >Contact Informnation</h2> <br>
+       <!--order confermation-->
+        <p>Name<sup>*</sup>: <input type="text" name="name" id="name" required="" placeholder=" Jems Taylor "> </p>
+
+        <fieldset >
+            <legend>Gender</legend>
+                 <p>Male: <input type="radio" name="gender" id="male"><br>
+                 Female: <input type="radio" name="gender" id="female"> </p>    
+        </fieldset>
+
+        <p> Address<sup>*</sup>:<textarea name="address" id="address" cols="70" rows="5" required="" placeholder="--Enter your adddress--"></textarea></p>
+
+        <p>Email: <input type="email" name="email" id="email" placeholder="abc@gmail.com"></p>
+
+        <p> MobileNo.<sup>*</sup>: <input type="number" name="contact" id="contact" required="" placeholder="11 22 33 44 55"> </p>
+
+           <input type="submit" class="one" value="Conform Order" >
+    </form>
+     <hr>      
+   <!--payent gateway method-->
+
+    <form action=" ">
+        <h2 >Payment</h2>    
+        <p>UPI<sup>*</sup>: <select name="upi" id="upi" required="" >
+                <option value="">--payment gateway--</option>
+                <option value="phon pay">Phon pay</option>
+                <option value="gogle pay">Gogle pay</option>
+                <option value="bhim upi">Bhim upi</option>
+                </select>
+
+          <input type="submit" class="two" value="Next">
+        </p>
+   </form>
+    
+   <form action="">
+        
+            <p>By card<sup>*</sup>: <select name="card" id="card" required="">
+                     <option value="">--selct a card type--</option>
+                     <option value="vissa">Vissa</option>
+                     <option value="rupay">Rupay</option>
+                     <option value="mastercard">Matercard</option>
+                     
+                     </select><br>
+              Card No.<sup>*</sup>: <input type="number" name="card no." id="card no." required="" placeholder="1111 2222 3333 4444 "><br>
+              Expirey<sup>*</sup>: <input type="date" name="expirey" id="expirey" required="">
+               CVV<sup>*</sup>: <input type="password" name="cvv" id="cvv" required="" placeholder="123">
+            </p>
+         <input type="submit" class="three" value="Pay now">
+        
+
+
+    </form>
+</div>
+    
+
+</body>
+
+</html>
